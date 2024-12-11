@@ -13,7 +13,10 @@ public class MyComponent implements MyService {
         String message = getWelcomeMessage(role);
         System.out.println(message);
         printMultiLineString() ;
+        Thread th = new Thread();
+        th.suspend();
     }
+
 
     public static String getWelcomeMessage(String role) {
         String message;
